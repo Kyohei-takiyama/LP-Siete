@@ -308,6 +308,7 @@ a {
   color: #777;
   display: flex;
   padding: 20px 20px;
+  font-size: 13px;
   justify-content: space-between;
 }
 
@@ -404,14 +405,15 @@ table th {
 }
 
 .final-content-contact-sentence{
-  padding-bottom: 20px;
+  padding:20px;
+  margin-top: 50px;
 }
 
 .final-content-contact-button{
   position: relative;
 }
 .final-content-contact-button button {
-  margin: 20px 0 0 0;
+  margin: 20px 0;
   padding: 20px 70px;
   border-radius: 30px;
   background: linear-gradient(30deg, #c72585, #870044);
@@ -425,8 +427,8 @@ table th {
   content: "";
   position: absolute;
   z-index:2;
-  top: 65%;
-  right: 59%;
+  top: 50%;
+  right: 60%;
   background: url(../img/mailicon.svg) no-repeat;
   background-size: cover;
   width: 20px;
@@ -447,7 +449,8 @@ table th {
   margin-top: 50px;
   text-align: center;
   padding: 20px 0;
-  background-color: azure;
+  background-color: #eeee;
+  color:darkgrey;
 }
 
 .copyright {
