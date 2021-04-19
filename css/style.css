@@ -41,8 +41,12 @@ a {
   margin: 10px 0 0 auto;
 }
 
+.img-content img{
+      width: 100%;
+}
+
 .sentence {
-  font-size: 80px;
+  font-size: 50px;
   line-height: 2;
   position: absolute;
   top: 50px;
@@ -69,6 +73,7 @@ a {
   top: 65%;
   left: 17%;
 }
+
 
 .sentence span {
   color: #339999;
@@ -124,9 +129,12 @@ a {
 /* 3つ目もコンテンツ */
 .thard-content {
   background: #eeee;
-  position: relative;
 }
 
+.thard-content-sentence-and-img{
+  display: flex;
+  justify-content: space-between;
+}
 .thard-content-titles {
   text-align: center;
   padding-top: 30px;
@@ -138,33 +146,21 @@ a {
 }
 
 .thard-content-sentence {
-  width: 400px;
+  margin: 70px auto;
+  width: 350px;
+  font-size: 15px;
+  line-height: 1.7;
 }
 .thard-content-sentence1 {
-  font-size: 15px;
-  line-height: 1.7;
-  position: absolute;
-  width: 350px;
-  top: 150px;
-  left: 260px;
-}
-
-.thard-content-sentence2 {
-  font-size: 15px;
-  line-height: 1.7;
-  position: absolute;
-  width: 350px;
-  top: 260px;
-  left: 260px;
+  margin-bottom: 50px;
 }
 
 .thard-content-img {
-  display: flex;
+  margin: 70px auto;
 }
 
 .thard-content-img img {
   width: 400px;
-  margin: 50px 200px 50px auto;
 }
 
 /* サービス */
@@ -249,7 +245,7 @@ a {
 }
 
 .wrappre {
-  width: 60%;
+  width: 70%;
   margin: 0ex auto;
   padding: 30px;
 }
@@ -299,7 +295,6 @@ a {
 }
 
 .card-sentence {
-  width: 260px;
   padding: 20px 10px;
   color: #777;
   font-weight: bold;
@@ -311,9 +306,8 @@ a {
 
 .card-sentences {
   color: #777;
-  width: 260px;
   display: flex;
-  padding: 20px 0px 20px 5px;
+  padding: 20px 20px;
   justify-content: space-between;
 }
 
@@ -409,25 +403,29 @@ table th {
   margin: 20px auto;
 }
 
-.final-content-contact {
-  position: relative;
+.final-content-contact-sentence{
+  padding-bottom: 20px;
 }
 
-.final-content-contact-button button {
+.final-content-contact-button{
   position: relative;
-  margin: 60px 0 0 0;
+}
+.final-content-contact-button button {
+  margin: 20px 0 0 0;
   padding: 20px 70px;
   border-radius: 30px;
   background: linear-gradient(30deg, #c72585, #870044);
   color: #fff;
   box-shadow: 0px 8px 3px #870044;
   border: solid 1px #c72585;
+  z-index:1;
 }
 
 .final-content-contact-button::after {
   content: "";
   position: absolute;
-  top: 79%;
+  z-index:2;
+  top: 65%;
   right: 59%;
   background: url(../img/mailicon.svg) no-repeat;
   background-size: cover;
@@ -438,10 +436,9 @@ table th {
 
 .final-content-contact-line {
   border-left: solid 2px #c72585;
-  position: absolute;
+  width: 5px;
   height: 30px;
-  top: 30px;
-  left: 350px;
+  margin: 0 auto;
 }
 
 /* フッター */
